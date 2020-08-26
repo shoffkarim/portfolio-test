@@ -1,0 +1,128 @@
+@media screen and ( max-width:1366px )
+  .slide
+    &__text
+      top: 250px
+    &__heading-top
+      font-size: 30px
+    &__heading
+      font-size: 40px
+    &__desc
+      font-size: 14px
+      margin-bottom: 30px
+  .swiper-button-next
+    right: 50px
+  .swiper-button-prev
+    left: 50px
+  .nav
+    max-width: 960px
+    left: calc(50% - 500px)
+  .logo
+    img
+      width: 90px
+  .menu
+    margin-right: 15px
+    &__item
+      margin-right: 15px
+@media screen and ( max-width: 1000px )
+  .nav
+    max-width: 800px
+    left: calc(50% - 400px)
+  .nav__container
+    position: relative
+  .mobile-menu
+    display: block
+    font-family: "Montserrat", sans-serif
+    font-weight: 300
+    color: #ffffff
+    font-size: 14px
+    transition: all 0.4s
+    margin-right: 15px
+    &:hover + .menu
+      top: 0
+      opacity: 1
+      visibility: visible
+      transition: all 0.4s
+  .menu
+    flex-direction: column
+    background-color: #736357
+    padding: 15px
+    position: absolute
+    opacity: 0
+    top: -25px
+    left: -34px
+    visibility: hidden
+    transition: all 0.4s
+    &:hover
+      top: 0
+      opacity: 1
+      visibility: visible
+      transition: all 0.4s
+  .menu__item
+    margin-right: 0
+    padding-bottom: 10px
+  .swiper-button-next, .swiper-button-prev
+    background-size: 20px 37px
+    width: 20px
+    height: 37px
+@media screen and ( max-width: 876px )
+  .nav
+    max-width: 700px
+    left: calc(50% - 350px)
+  .slide
+    &__text
+      max-width: 420px
+      left: calc(50% - 210px)
+    &__heading-top
+      font-size: 25px
+    &__heading
+      font-size: 35px
+  .btn-start
+    padding: 15px 25px
+  .swiper-button-next
+    right: 15px
+  .swiper-button-prev
+    left: 15px
+  .swiper-container-horizontal > .swiper-pagination-bullets
+    bottom: 20px
+@media screen and ( max-width: 768px )
+  .nav
+    max-width: 470px
+    left: calc(50% - 235px)
+    padding: 0 15px
+    padding-top: 15px
+  .slide
+    &__text
+      max-width: 300px
+      left: calc(50%  - 150px)
+    &__heading-top
+      font-size: 20px
+    &__heading
+      font-size: 25px
+    &__desc
+      line-height: 21px
+@media screen and ( max-width: 500px )
+  .nav
+    max-width: 370px
+    left: calc(50% - 185px)
+  .swiper-button-next, .swiper-button-prev
+    background-size: 15px 28px
+    width: 15px
+    height: 28px
+@media screen and ( max-width: 400px )
+  .nav
+    max-width: 300px
+    left: calc(50% - 150px)
+    padding: 0 10px
+    padding-top: 10px
+  .slide
+    &__text
+      max-width: 260px
+      left: calc( 50% - 130px )
+    &__heading
+      line-height: 30px
+    &__heading-top
+      line-height: 25px
+  .swiper-button-next
+    right: 10px
+  .swiper-button-prev
+    left: 10px
