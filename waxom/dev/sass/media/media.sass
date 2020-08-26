@@ -1,3 +1,7 @@
+@media screen and ( max-width: 1366px )
+  .section__desc
+    font-size: 14px
+    margin-bottom: 30px
 @media screen and (max-width:1280px)
   .wrapper
     max-width: 960px
@@ -7,16 +11,23 @@
 @media screen and ( max-width: 876px )
   .wrapper
     max-width: 700px
+  .section__heading
+    font-size: 25px
 @media screen and ( max-width: 768px )
   .wrapper
     max-width: 470px
     padding: 0 15px
+  .section__desc
+    line-height: 21px
 @media screen and ( max-width: 500px )
   .wrapper
     max-width: 370px
+  .section__heading
+    font-size: 20px
 @media screen and ( max-width: 400px )
   .wrapper
     max-width: 300px
     padding: 0 10px
-@import sections/mheader
-@import sections/mservices
+@import msections/mheader
+@import msections/mservices
+@import msections/mbanner
