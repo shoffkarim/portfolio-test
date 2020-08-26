@@ -1,0 +1,73 @@
+@import ../base/vars
+.nav
+  position: absolute
+  top: 0
+  z-index: 2
+  width: 100%
+  max-width: 1230px
+  padding: 0 30px
+  padding-top: 30px
+  margin: 0 auto
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  &__container
+    display: flex
+    flex-direction: row
+    justify-items: flex-start
+    align-items: center
+.menu
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  margin-right: 30px
+  &__item
+    margin-right: 30px
+    a
+      font-family: $montserrat
+      font-weight: 300
+      color: #ffffff
+      font-size: 14px
+      transition: all 0.4s
+      &:hover
+        color: #c7b299
+        transition: all 0.4s
+.users-links
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-start
+  .basket
+    margin-right: 30px
+  .search
+    position: relative
+    &__img:hover + .search__input
+      width: 200px
+      padding: 10px 5px
+      transition: all 0.4s
+    &__input
+      position: absolute
+      right: 0
+      width: 0px
+      height: 35px
+      top: -2px
+      font-size: 14px
+      padding: 0
+      border: none
+      border-radius: 3px
+      transition: all 0.4s
+      color: #555555
+      &:hover
+        width: 200px
+        padding: 10px 5px
+        transition: all 0.4s
+      &:focus
+        width: 200px
+        padding: 10px 5px
+        transition: all 0.4s
+      &:active
+        width: 200px
+        padding: 10px 5px
+        transition: all 0.4s
