@@ -1,5 +1,6 @@
 .wrapper {
   max-width: 1230px;
+  height: 100%;
   padding: 0 30px;
   margin: 0 auto;
   z-index: 1; }
@@ -101,7 +102,8 @@
   position: relative; }
   .slide img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
   .slide__text {
     position: absolute;
     top: 380px;
@@ -191,7 +193,61 @@
 
 .header {
   width: 100%;
-  height: 100%; }
+  height: 100vh; }
+
+.services-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.services-item__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 25px; }
+  .services-item__link::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    position: absolute;
+    bottom: 0;
+    left: calc( 50% - 35px);
+    transition: all 0.4s; }
+  .services-item__link:hover svg path {
+    fill: #c7b299;
+    transition: all 0.4s; }
+  .services-item__link:hover .services-item__name {
+    color: #c7b299;
+    transition: all 0.4s; }
+  .services-item__link:hover::after {
+    background-color: #c7b299;
+    transition: all 0.4s; }
+
+.services-item__icon {
+  margin-bottom: 30px; }
+
+.services-item__name {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #555555;
+  margin-bottom: 18px;
+  transition: all 0.4s; }
+
+.services-item__desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #8c8c8c;
+  text-align: center;
+  max-width: 280px; }
 
 @media screen and (max-width: 1280px) {
   .wrapper {
@@ -347,3 +403,7 @@
     right: 10px; }
   .swiper-button-prev {
     left: 10px; } }
+
+@media screen and (max-width: 1280px) {
+  .services-item {
+    margin-bottom: 20px; } }
