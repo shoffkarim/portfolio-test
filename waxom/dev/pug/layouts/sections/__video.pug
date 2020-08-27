@@ -1,5 +1,6 @@
 section.video
-  img(src="img/video-poster.png", alt="alt")
+  video(preload="" autoplay="autoplay" muted="muted" loop="loop" poster="img/video-poster.png").video__content
+    source(src="video/video.mp4" type="video/mp4")
   button.btn.btn-video(type='submit')
     img(src="img/play-video.png", alt="alt")
   h2.video__name Waxom Video Presentation
