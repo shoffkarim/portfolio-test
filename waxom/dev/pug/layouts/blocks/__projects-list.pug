@@ -1,17 +1,17 @@
 .projects-container
   ul.tabs
-    li.tabs__item
+    li.tabs__item.active(data-num-tab="1")
       a(href="") All
-    li.tabs__item
+    li.tabs__item(data-num-tab="2")
       a(href="") Web Design
-    li.tabs__item
+    li.tabs__item(data-num-tab="3")
       a(href="") Mobile App
-    li.tabs__item
+    li.tabs__item(data-num-tab="4")
       a(href="") Illustration
-    li.tabs__item
+    li.tabs__item(data-num-tab="5")
       a(href="") Photography
   ul.projects-list
-    li.projects-item
+    li.projects-item(data-num-project="2")
       .projects-item__img-over
         img(src="img/projects/Photo-5.png", alt="alt").projects-item__img
         .projects-item__shadow
@@ -23,8 +23,8 @@
             include __svg-zoom
       .projects-item__desc
         p.projects-item__name Claritas Etiam Processus
-        p.projects-item__category Photography, Nature
-    li.projects-item
+        p.projects-item__category Web Design, Mobile
+    li.projects-item(data-num-project="3")
       .projects-item__img-over
         img(src="img/projects/Photo-4.png", alt="alt").projects-item__img
         .projects-item__shadow
@@ -36,8 +36,8 @@
             include __svg-zoom
       .projects-item__desc
         p.projects-item__name Quam Nutamus Farum
-        p.projects-item__category Graphic Design, Mock-Up
-    li.projects-item
+        p.projects-item__category Mobile App
+    li.projects-item(data-num-project="4")
       .projects-item__img-over
         img(src="img/projects/Photo-3.png", alt="alt").projects-item__img
         .projects-item__shadow
@@ -49,8 +49,8 @@
             include __svg-zoom
       .projects-item__desc
         p.projects-item__name Usus Legentis Videntur
-        p.projects-item__category Photography, Holiday
-    li.projects-item
+        p.projects-item__category Illustration
+    li.projects-item(data-num-project="5")
       .projects-item__img-over
         img(src="img/projects/Photo-2.png", alt="alt").projects-item__img
         .projects-item__shadow
@@ -63,7 +63,7 @@
       .projects-item__desc
         p.projects-item__name Claritas Etiam Processus
         p.projects-item__category Photography, Nature
-    li.projects-item
+    li.projects-item(data-num-project="2")
       .projects-item__img-over
         img(src="img/projects/Photo-1.png", alt="alt").projects-item__img
         .projects-item__shadow
@@ -75,8 +75,8 @@
             include __svg-zoom
       .projects-item__desc
         p.projects-item__name Quam Nutamus Farum
-        p.projects-item__category Graphic Design, Mock-Up
-    li.projects-item
+        p.projects-item__category Web Design
+    li.projects-item(data-num-project="3")
       .projects-item__img-over
         img(src="img/projects/Photo.png", alt="alt").projects-item__img
         .projects-item__shadow
@@ -88,4 +88,4 @@
             include __svg-zoom
       .projects-item__desc
         p.projects-item__name Usus Legentis Videntur
-        p.projects-item__category Photography, Holiday
+        p.projects-item__category Mobile App

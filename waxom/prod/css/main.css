@@ -350,11 +350,11 @@
         border: 1px solid #998675;
         color: #ffffff;
         transition: all 0.4s; }
-      .tabs__item a.active {
-        background-color: #998675;
-        border: 1px solid #998675;
-        color: #ffffff;
-        transition: all 0.4s; }
+    .tabs__item.active a {
+      background-color: #998675;
+      border: 1px solid #998675;
+      color: #ffffff;
+      transition: all 0.4s; }
 
 .projects-container {
   display: flex;
@@ -377,7 +377,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s; }
   .projects-item:hover .projects-item__desc {
     background-color: #362f2d;
     transition: all 0.4s; }
