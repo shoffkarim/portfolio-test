@@ -633,7 +633,8 @@
     max-height: 395px; }
     .posts-slide:hover .posts-slide__text {
       background-color: #362f2d;
-      border: none;
+      border: 1px solid #362f2d;
+      border-top: none;
       transition: all 0.4s; }
     .posts-slide:hover .posts-slide__shadow {
       width: 100%;
@@ -764,6 +765,228 @@
 .posts-button-prev {
   background-image: url("../img/posts/left.png");
   left: calc( 50% - 15px); }
+
+.logos {
+  background-image: url("../img/logos-back.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 489px;
+  display: block; }
+  .logos .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .logos-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .logos-item a {
+    display: block; }
+    .logos-item a:hover {
+      filter: grayscale(0.5); }
+  .logos-item .first {
+    width: 210px;
+    height: 127px;
+    background: url("../img/logo_sprites.png") -240px -240px; }
+  .logos-item .second {
+    width: 210px;
+    height: 210px;
+    background: url("../img/logo_sprites.png") -10px -10px; }
+  .logos-item .third {
+    width: 210px;
+    height: 130px;
+    background: url("../img/logo_sprites.png") -10px -240px; }
+  .logos-item .fourth {
+    width: 210px;
+    height: 164px;
+    background: url("../img/logo_sprites.png") -240px -10px; }
+
+.footer {
+  background-color: #191919;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .footer-desc {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555555;
+    width: 265px;
+    margin-bottom: 30px; }
+  .footer__logo {
+    margin-bottom: 25px; }
+  .footer-column {
+    width: 270px;
+    margin-top: 20px; }
+    .footer-column:first-child {
+      margin-top: 0; }
+    .footer-column__heading {
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      color: #ffffff;
+      margin-bottom: 30px; }
+
+.posts-item {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .posts-item:hover .posts-item__date {
+    color: #ffffff;
+    transition: all 0.4s; }
+  .posts-item:hover .posts-item__heading {
+    color: #c7b299;
+    transition: all 0.4s; }
+  .posts-item:last-child {
+    border-bottom: none; }
+  .posts-item:first-child {
+    padding-top: 0; }
+  .posts-item__date {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #363636;
+    margin-bottom: 5px;
+    transition: all 0.4s; }
+  .posts-item__heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    transition: all 0.4s; }
+
+.twitter-item {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .twitter-item:hover .twitter-item__time {
+    color: #ffffff;
+    transition: all 0.4s; }
+  .twitter-item:hover .twitter-item__heading span {
+    color: #c7b299;
+    transition: all 0.4s; }
+  .twitter-item:last-child {
+    border-bottom: none; }
+  .twitter-item:first-child {
+    padding-top: 0; }
+  .twitter-item__time {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #363636;
+    margin-top: 5px; }
+  .twitter-item__heading span, .twitter-item__heading a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555; }
+
+.dribbble-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.dribbble-item {
+  margin-bottom: 10px;
+  width: 130px;
+  height: 100px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden; }
+  .dribbble-item:hover .dribbble-item__img {
+    -webkit-transform: scale(1.1) translateZ(0);
+    transform: scale(1.1) translateZ(0); }
+  .dribbble-item__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+    -webkit-transition: .4s -webkit-transform;
+    transition: .4s -webkit-transform;
+    transition: .4s transform;
+    transition: .4s transform, .4s -webkit-transform;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0); }
+    .dribbble-item__img-over {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      display: block; }
+
+a.blue {
+  color: #00bff3; }
+
+a.link {
+  color: #959595; }
+
+.read-more.white {
+  color: #d1d1d1; }
+  .read-more.white::before {
+    background-image: url("../img/arrow-white.png"); }
+
+.footer-bottom {
+  background-color: #111111;
+  padding-top: 40px;
+  padding-bottom: 50px; }
+  .footer-bottom .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline; }
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline; }
+  .footer-menu__item {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2); }
+    .footer-menu__item:first-child {
+      padding-left: 0; }
+    .footer-menu__item:last-child {
+      border-right: none; }
+    .footer-menu__item a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      color: #555555;
+      transition: all 0.4s; }
+      .footer-menu__item a:hover {
+        color: #c7b299;
+        transition: all 0.4s; }
+      .footer-menu__item a span.white {
+        color: #959595; }
 
 @media screen and (max-width: 1366px) {
   .section__desc {

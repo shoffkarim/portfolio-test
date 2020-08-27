@@ -1,0 +1,152 @@
+@import ../base/vars
+.footer
+  background-color: #191919
+  padding-top: 80px
+  padding-bottom: 80px
+  &-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+  &-desc
+    font-family: $montserrat
+    font-weight: $light
+    font-size: 14px
+    line-height: 24px
+    color: #555555
+    width: 265px
+    margin-bottom: 30px
+  &__logo
+    margin-bottom: 25px
+  &-column
+    width: 270px
+    margin-top: 20px
+    &:first-child
+      margin-top: 0
+    &__heading
+      font-family: $raleway
+      font-weight: $semibold
+      font-size: 24px
+      color: #ffffff
+      margin-bottom: 30px
+.posts
+  &-item
+    padding-bottom: 20px
+    padding-top: 20px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    &:hover
+      .posts-item__date
+        color: #ffffff
+        transition: all 0.4s
+      .posts-item__heading
+        color: #c7b299
+        transition: all 0.4s
+    &:last-child
+      border-bottom: none
+    &:first-child
+      padding-top: 0
+    &__date
+      font-family: $montserrat
+      font-weight: $light
+      font-size: 12px
+      color: #363636
+      margin-bottom: 5px
+      transition: all 0.4s
+    &__heading
+      font-family: $montserrat
+      font-weight: $light
+      font-size: 14px
+      line-height: 20px
+      color: #555555
+      transition: all 0.4s
+.twitter
+  &-item
+    padding-bottom: 20px
+    padding-top: 20px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    &:hover
+      .twitter-item__time
+        color: #ffffff
+        transition: all 0.4s
+      .twitter-item__heading
+        span
+          color: #c7b299
+          transition: all 0.4s
+    &:last-child
+      border-bottom: none
+    &:first-child
+      padding-top: 0
+    &__time
+      font-family: $montserrat
+      font-weight: $light
+      font-size: 12px
+      color: #363636
+      margin-top: 5px
+    &__heading
+      span, a
+        font-family: $montserrat
+        font-weight: $light
+        font-size: 14px
+        line-height: 20px
+        color: #555555
+.dribbble
+  &-list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &-item
+    margin-bottom: 10px
+    width: 130px
+    height: 100px
+    overflow: hidden
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: start
+    -ms-flex-pack: start
+    justify-content: flex-start
+    position: relative
+    overflow: hidden
+    &:hover
+      .dribbble-item__img
+        -webkit-transform: scale(1.1) translateZ(0)
+        transform: scale(1.1) translateZ(0)
+    &__img
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      -o-object-fit: cover
+      object-fit: cover
+      font-family: 'object-fit: cover;'
+      -webkit-transition: .4s -webkit-transform
+      transition: .4s -webkit-transform
+      transition: .4s transform
+      transition: .4s transform, .4s -webkit-transform
+      will-change: transform
+      -webkit-backface-visibility: hidden
+      -webkit-transform: scale(1) translateZ(0)
+      transform: scale(1) translateZ(0)
+      &-over
+        position: absolute
+        right: 0
+        top: 0
+        width: 100%
+        min-height: 100%
+        overflow: hidden
+        display: block
+a.blue
+  color: #00bff3
+a.link
+  color: #959595
+.read-more.white
+  color: #d1d1d1
+  &::before
+    background-image: url("../img/arrow-white.png")
+@import ../blocks/footer-bottom

@@ -1,0 +1,35 @@
+@import ../base/vars
+.footer
+  &-bottom
+    background-color: #111111
+    padding-top: 40px
+    padding-bottom: 50px
+    .wrapper
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: baseline
+  &-menu
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: baseline
+    &__item
+      padding-right: 10px
+      padding-left: 10px
+      border-right: 1px solid rgba(255, 255, 255, 0.2)
+      &:first-child
+        padding-left: 0
+      &:last-child
+        border-right: none
+      a
+        font-family: $montserrat
+        font-weight: $light
+        font-size: 13px
+        color: #555555
+        transition: all 0.4s
+        &:hover
+          color: #c7b299
+          transition: all 0.4s
+        span.white
+          color: #959595
