@@ -1,0 +1,59 @@
+@import ../base/vars
+.mobile
+  background-color: #fbfaf8
+  padding-top: 80px
+  .wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+  img
+    display: block
+    width: 100%
+    height: 100%
+  &__phone
+    max-width: 345px
+  &-container
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    margin-left: 30px
+    margin-top: 110px
+  &__heading
+    font-family: $raleway
+    font-weight: $semibold
+    font-size: 30px
+    color: #555555
+    margin-bottom: 35px
+  &__desc
+    font-family: $montserrat
+    font-weight: $light
+    font-size: 16px
+    color: #8c8c8c
+    line-height: 28px
+    margin-bottom: 35px
+    width: 660px
+  &-list
+    padding-left: 60px
+    display: flex
+    flex-direction: column
+  &-item
+    p
+      font-family: $montserrat
+      font-weight: $light
+      font-size: 16px
+      line-height: 32px
+      color: #8c8c8c
+      padding-left: 50px
+      position: relative
+      margin-bottom: 5px
+      &::before
+        content: ""
+        width: 21px
+        height: 21px
+        background-image: url("../img/list-arrow.png")
+        background-repeat: no-repeat
+        position: absolute
+        top: 5px
+        left: 0

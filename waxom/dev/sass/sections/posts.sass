@@ -1,0 +1,145 @@
+@import ../base/vars
+.posts
+  padding-top: 80px
+  padding-bottom: 80px
+  &-slider
+    margin: 0 auto
+    margin-top: 35px
+    overflow: hidden
+    list-style: none
+    padding: 0
+    position: relative
+    padding-bottom: 60px
+  &-slide
+    max-width: 370px
+    max-height: 395px
+    &:hover
+      .posts-slide__text
+        background-color: #362f2d
+        border: none
+        transition: all 0.4s
+      .posts-slide__shadow
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.7)
+        transition: all 0.4s
+      .posts-slide__name
+        color: #c7b299
+        transition: all 0.4s
+      .posts-slide__desc
+        color: #ffffff
+        transition: all 0.4s
+      .posts-slide__date-num
+        background-color: #c7b299
+        transition: all 0.4s
+      .posts-slide__date-month
+        background-color: #a48d72
+        transition: all 0.4s
+    &__img
+      width: 100%
+      display: block
+      z-index: 1
+    &-over
+      position: relative
+    &__shadow
+      width: 0
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background-color: rgba(0, 0, 0, 0)
+      transition: all 0.4s
+      z-index: 2
+      transition: all 0.4s
+    &__text
+      width: 100%
+      height: auto
+      background-color: #ffffff
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+      padding: 35px 30px
+      position: relative
+      transition: all 0.4s
+      border: 1px solid #f8f8f8
+      border-top: none
+      transition: all 0.4s
+      z-index: 3
+    &__name
+      font-family: $raleway
+      font-weight: $medium
+      font-size: 20px
+      color: #555555
+      margin-bottom: 15px
+      transition: all 0.4s
+    &__desc
+      font-family: $montserrat
+      font-weight: $light
+      font-size: 14px
+      color: #8c8c8c
+      margin-bottom: 20px
+      transition: all 0.4s
+    &__date
+      position: absolute
+      top: 20px
+      left: 20px
+      display: flex
+      flex-direction: column
+      z-index: 3
+      &-num
+        font-family: $montserrat
+        font-weight: $light
+        font-size: 24px
+        color: #ffffff
+        padding: 7px 9px
+        background-color: #363636
+        border-top-right-radius: 2px
+        border-top-left-radius: 2px
+        text-align: center
+        transition: all 0.4s
+      &-month
+        font-family: $montserrat
+        font-weight: $light
+        font-size: 18px
+        color: #ffffff
+        padding: 7px 9px
+        background-color: #252525
+        border-bottom-right-radius: 2px
+        border-bottom-left-radius: 2px
+        text-align: center
+        transition: all 0.4s
+.read-more
+  font-family: $montserrat
+  font-weight: $light
+  font-size: 14px
+  color: #c7b299
+  padding-right: 15px
+  position: relative
+  &::before
+    content: ""
+    width: 5px
+    height: 8px
+    background-image: url("../img/readmore-arrow.png")
+    background-repeat: no-repeat
+    position: absolute
+    top: 4px
+    right: 0
+.posts-button-next, .posts-button-prev
+  width: 22px
+  height: 22px
+  background-repeat: no-repeat
+  cursor: pointer
+  z-index: 10
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  bottom: 0px
+  left: 50%
+.posts-button-next
+  background-image: url("../img/posts/right.png")
+  left: calc( 50% + 15px)
+.posts-button-prev
+  background-image: url("../img/posts/left.png")
+  left: calc( 50% - 15px)
