@@ -4,7 +4,7 @@ const uglifyJsPlugin = require("babel-minify-webpack-plugin");
 const ExtractTextPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    entry: './app/src/js/script.js',
+    entry: './polymedia/src/js/script.js',
     performance: {
         hints: false
     },
@@ -61,7 +61,7 @@ module.exports = {
         extensions: ['*', '.js']
     },
     output: {
-        path: __dirname + '/app/build',
+        path: __dirname + '/polymedia/build',
         publicPath: '/',
         filename: 'js/script.js'
     },

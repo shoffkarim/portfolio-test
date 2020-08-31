@@ -3,11 +3,11 @@ const pug = require("gulp-pug");
 
 let src = {
   dev: {
-    pug: "app/src/pug/*.pug",
+    pug: "polymedia/src/pug/*.pug",
   },
 
   build: {
-    html: "app/build/",
+    html: "polymedia/build/",
   },
 };
 

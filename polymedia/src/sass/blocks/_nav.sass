@@ -1,0 +1,78 @@
+.nav
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  background-color: #141414
+  &-container
+    width: 100%
+    padding: 33px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &-left
+    display: flex
+    flex-direction: row
+    align-items: center
+    .logo
+      margin-right: 100px
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-end
+    &-top
+      display: flex
+      flex-direction: row
+      align-items: baseline
+      margin-bottom: 25px
+    &-bottom
+      display: flex
+      flex-direction: row
+      align-items: baseline
+      justify-content: flex-end
+.soc-links
+  &-list
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-right: 45px
+    height: 50px
+  &-item
+    margin-right: 30px
+    &__href
+      .icon.yt
+        max-width: 15px
+      .icon.fb
+        max-width: 13px
+      .icon.tw
+        max-width: 15px
+      .icon.inst
+        max-width: 13px
+.navigation
+  display: flex
+  flex-direction: row
+  align-items: baseline
+  justify-content: flex-end
+  &-item
+    margin-right: 30px
+    &:last-child
+      margin-right: 0
+    &__link
+      @include smaller-sb-text
+      color: #ffffff
+    &__menu
+      @include smaller-sb-text
+      color: #ffffff
+  &-submenu
+    display: none
+.btn-query
+  margin-right: 35px
+.language
+  margin-right: 55px
+  &-item
+    @include little-text
+.phone
+  &-number
+    @include little-text
+    letter-spacing: 0.18em
