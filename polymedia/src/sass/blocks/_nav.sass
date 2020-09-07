@@ -40,16 +40,21 @@
     margin-right: 45px
     height: 50px
   &-item
-    margin-right: 30px
+    margin-right: 20px
     &__href
+      padding: 10px
       .icon.yt
         max-width: 15px
+        height: 15px
       .icon.fb
         max-width: 13px
+        height: 15px
       .icon.twit
         max-width: 15px
+        height: 15px
       .icon.inst
         max-width: 13px
+        height: 15px
 .navigation
   display: flex
   flex-direction: row
@@ -57,18 +62,51 @@
   justify-content: flex-end
   &-item
     margin-right: 30px
+    position: relative
+    &:hover .navigation-submenu
+      top: 30px
+      visibility: visible
+      opacity: 1
+      transition: all 0.4s
     &:last-child
       margin-right: 0
-    &__link
-      @include smaller-sb-text
-      color: #ffffff
     &__menu
       @include smaller-sb-text
       color: #ffffff
+      transition: all 0.4s
+      &.active
+        color: #0b5fbc
+        transition: all 0.4s
+      &:hover
+        color: #0b5fbc
+        transition: all 0.4s
   &-submenu
-    display: none
+    background-color: $bluebtn
+    padding: 25px
+    max-width: 135px
+    position: absolute
+    top: 0
+    left: calc( 50% - 68px)
+    visibility: hidden
+    opacity: 0
+    transition: all 0.4s
+    &-item
+      margin-bottom:15px
+      &:last-child
+        margin-bottom: 0px
+      a
+        @include smaller-sb-text
+        color: #ffffff
+        transition: all 0.4s
+        opacity: 1
+        transition: all 0.4s
+        &:hover
+          opacity: 0.75
+          transition: all 0.4s
 .btn-query
   margin-right: 35px
+  position: relative
+  @include btn-blue-animation
 .language
   margin-right: 55px
   &-item
@@ -77,6 +115,7 @@
   &-number
     @include little-text
     letter-spacing: 0.18em
+
 #yt, #fb, #inst, #twit
   &:hover path
     fill: #ffffff
@@ -84,3 +123,5 @@
   path
     fill: $bluebtn
     transition: all 0.4s
+.search
+  cursor: pointer

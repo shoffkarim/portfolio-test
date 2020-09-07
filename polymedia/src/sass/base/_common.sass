@@ -7,4 +7,19 @@
   @include btn-text
   color: #ffffff
   padding: 0 25px
-  background-color: $bluebtn
+  border: 1px solid $bluebtn
+.svg-draw
+  &:hover path
+    stroke-dasharray: 100%
+    stroke-dashoffset: 0
+    animation: svg-draw
+    animation-duration: 2s
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+@keyframes svg-draw
+  0%
+    stroke-dashoffset: 0
+  50%
+    stroke-dashoffset: 100%
+  100%
+    stroke-dashoffset: 0

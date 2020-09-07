@@ -23,8 +23,8 @@ nav.nav
               use(xlink:href='#inst')
       button.btn.btn-query(type='submit') Отправить запрос
       .search
-        svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24.5px' height='24.5px')
-          path(fill-rule='evenodd' stroke-width='1px' stroke='rgb(255, 255, 255)' fill-opacity='0' fill='rgb(182, 43, 42)' d='M5.845,5.843 C8.974,2.714 14.048,2.714 17.178,5.843 C20.307,8.973 20.307,14.046 17.178,17.176 C14.048,20.306 8.974,20.306 5.845,17.176 C2.715,14.046 2.715,8.973 5.845,5.843 Z')
+        svg(class="svg-draw" xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24.5px' height='24.5px')
+          path(class="svg-draw svg-draw__hover" fill-rule='evenodd' stroke-width='1px' stroke='rgb(255, 255, 255)' fill-opacity='0' fill='rgb(182, 43, 42)' d='M5.845,5.843 C8.974,2.714 14.048,2.714 17.178,5.843 C20.307,8.973 20.307,14.046 17.178,17.176 C14.048,20.306 8.974,20.306 5.845,17.176 C2.715,14.046 2.715,8.973 5.845,5.843 Z')
           path(fill-rule='evenodd' fill='rgb(255, 255, 255)' d='M16.489,17.222 L17.223,16.487 L24.511,23.775 L23.776,24.510 L16.489,17.222 Z')
     .nav-right
       .nav-right-top
@@ -35,9 +35,9 @@ nav.nav
       .nav-right-bottom
         ul.navigation
           li.navigation-item
-            a(href="").navigation-item__link Главная
+            a(href="").navigation-item__menu Главная
           li.navigation-item
-            span.navigation-item__menu О компании
+            a(href="").navigation-item__menu О компании
             ul.navigation-submenu
               li.navigation-submenu-item
                 a(href="") Генеральный директор
@@ -56,8 +56,8 @@ nav.nav
               li.navigation-submenu-item
                 a(href="") Отзывы
           li.navigation-item
-            span.navigation-item__menu Портфолио
+            a(href="").navigation-item__menu Портфолио
           li.navigation-item
-            span.navigation-item__menu Услуги
+            a(href="").navigation-item__menu Услуги
           li.navigation-item
-            a(href="").navigation-item__link Контакты
+            a(href="").navigation-item__menu Контакты

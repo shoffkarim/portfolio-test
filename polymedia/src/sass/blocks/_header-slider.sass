@@ -56,8 +56,11 @@
     object-fit: cover
   &__href
     border-bottom: 1px solid rgba(255,255,255,0.25)
-    -webkit-transition: 0.7s border, 0.7s top
-    transition: 0.7s border, 0.7s top
+    transition: 0.7s border, 0.7s top, padding-bottom 0.8s, border-bottom 0.2s 0.4s
+    &:hover
+      padding-bottom: 30px
+      border-bottom: 1px solid rgba(255,255,255,0)
+      transition: padding-bottom 0.8s, border-bottom 0.2s 0.4s
     &over
       display: block
       max-width: 750px
