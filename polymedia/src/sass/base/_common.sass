@@ -3,8 +3,8 @@
   width: 100%
   margin: 0 auto
   padding: 0 180px
-.btn
-  @include btn-text
+.link
+  @include link-text
   color: #ffffff
   padding: 0 25px
   border: 1px solid $bluebtn
@@ -16,6 +16,14 @@
     animation-duration: 2s
     animation-iteration-count: infinite
     animation-timing-function: linear
+.common
+  &-h1
+    @include large-text
+  &-h2
+    @include big-text
+  &-text-white
+    @include desc-text
+    
 @keyframes svg-draw
   0%
     stroke-dashoffset: 0
