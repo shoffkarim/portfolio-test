@@ -1,0 +1,69 @@
+.showreel
+  margin-top: 70px
+  &-head
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    padding-top: 130px
+    padding-bottom: 130px
+  &-heading
+    color: #ffffff
+    max-width: 325px
+  &-button
+    position: relative
+    width: 56px
+    height: 56px
+    transition: all 0.4s
+    z-index: 1
+    &:before
+      content: ""
+      width: 56px
+      height: 56px
+      position: absolute
+      top: 0
+      left: 0
+      z-index: -1
+      margin-top: -28px
+      margin-left: -28px
+      border-radius: 50%
+      background-color: $bluebtn
+      transition: all 0.4s
+    &:after
+      content:""
+      position: absolute
+      margin-left: -4px
+      margin-top: -8px
+      width: 11px
+      height: 17px
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAARCAYAAAAL4VbbAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAL9JREFUKJGV0j1Kg2EQBODJH6QI2BjrhBzBIqI3UMhFLMwZUuglAjY2eoM0djZa2FmLjYKHeCzyBUIg72sGttkdhtmdDe7RR2oVa7xjUiO3s8YyyUuSWUpolIMpPnGHTsnGpnGMFZ5xUiMHbSzwhYsaeVOX+Mb8P+RghDc8YdCCJK3CDY6SfCR5rSmPG+VHDErkq8bzTclzZ+sa59uz7o6/YZKHJL0kp0l+9yV41iR4W0vwGj+YFZY97OvigH/+A4A19PAZHrcDAAAAAElFTkSuQmCC')
+      background-repeat: no-repeat
+      background-position: center
+      transition: all 0.4s
+    &:hover
+      &::before
+        width: 66px
+        height: 66px
+        margin-left: -33px
+        margin-top: -33px
+        transition: all 0.4s
+      &::after
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAARCAYAAAAL4VbbAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAHVJREFUKJGN0rERgmAQROGfMSEg1QboAnugFaxCyiDGyApswSbIzQn4CBxi9s1c9uZm524LJtQoZ1P8+aJNZfihT2XYMOKSyAcf3FIZFtxTGVY8UvnghaaCkvFON89oksxDknlBJ7zzVfDBp+CDcTfi1k3CPu/i/2VXkhB16AAAAABJRU5ErkJggg==')
+  &-bottom
+    display: flex
+    flex-direction: row
+    align-items: baseline
+    justify-content: space-between
+    margin-top: 160px
+    margin-bottom: 90px
+    &__text
+      max-width: 500px
+      color: #ffffff
+.btn-container
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+.link-about
+  position: relative
+  @include link-blue-animation
